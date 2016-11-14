@@ -128,7 +128,7 @@ update:
 # target: npm-install        - Install npm development packages.
 # target: npm-update         - Update npm development packages.
 # target: npm-version        - Display version for each package.
-.PHONY: npm-installl npm-update npm-version
+.PHONY: npm-install npm-update npm-version
 npm-install:
 	@$(call HELPTEXT,$@)
 	npm install

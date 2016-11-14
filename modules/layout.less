@@ -1,9 +1,16 @@
 @totalWidth: 100%;           // Fluid layout
 @headerBackgroundColor:#0059f8;
 
-body {
-    .showGrid();
+.wrap-all {
+    .font();
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    .typographyTableElements();
+    .typographyOtherElements();
 }
+
 
 .inner-wrap {
     max-width: 960px;
@@ -20,7 +27,15 @@ body {
 }
 
 .outer-wrap {
-    margin-bottom: 10px;
+    margin-bottom: @magicNumber;
+}
+
+.route-grid {
+    .showGrid();
+}
+
+.route-typography {
+    .showTypoGrid();
 }
 
 .outer-wrap-header,
