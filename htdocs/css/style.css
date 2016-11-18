@@ -705,9 +705,6 @@ template {
   display: block;
   clear: both;
 }
-.outer-wrap {
-  margin-bottom: 24px;
-}
 .route-grid {
   background: url(../img/grid/grid960x12x60x20.png) repeat-y fixed center center;
   background-size: 100% auto;
@@ -1132,9 +1129,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * Show grid.
  */
-.showTypoGrid {
-  background-image: url(../img/grid/horisontal-grid-24.png);
-}
 /**
  * Responsive Grid
  */
