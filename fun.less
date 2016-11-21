@@ -1,0 +1,146 @@
+/**
+* Anax Flat theme.
+*/
+@import url(modules.less);
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Indie+Flower');
+
+@fontFamilyHeadings:'Bungee Inline', cursive;
+@fontFamilyBody: 'Indie Flower', cursive;
+
+
+@navbarItemBgColor: #eeaaee;
+@navbarAlternateColor:#e16ae1;
+@navbarSelectedColor:#eeeeaa;
+@bodyBackgroundColor:#AEA;
+
+
+/* The animation code */
+@keyframes bodybackground {
+   0%   {background-color: @navbarItemBgColor; }
+   25%  {background-color: @navbarAlternateColor; }
+   50%  {background-color: @navbarSelectedColor; }
+   100% {background-color: @bodyBackgroundColor; }
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+@keyframes blinker_sixty {
+  60% { opacity: 0; }
+}
+
+@keyframes blinker_seventy {
+  70% { opacity: 0; }
+}
+
+@keyframes blinker_eighty {
+  80% { opacity: 0; }
+}
+
+@keyframes blinker_ninety {
+  90% { opacity: 0; }
+}
+
+body {
+    animation: bodybackground 4s infinite;
+    color:#44E;
+}
+
+h1, h2, h3, h4 {
+    color:#33D;
+    animation: blinker 1s linear infinite;
+}
+
+
+div.rm-navbar-top ul li:first-child {
+    animation: blinker 1s linear infinite;
+}
+
+div.rm-navbar-top ul li:nth-child(2) {
+    animation: blinker_sixty 1s linear infinite;
+}
+
+div.rm-navbar-top ul li:nth-child(3) {
+    animation: blinker_seventy 1s linear infinite;
+}
+
+div.rm-navbar-top ul li:nth-child(4) {
+    animation: blinker_eighty 1s linear infinite;
+}
+
+div.rm-navbar-top ul li:nth-child(5) {
+    animation: blinker_ninety 1s linear infinite;
+}
+
+
+
+
+/** --------------------------------------------------------------
+ *  Logo images
+ */
+.logo-1 {
+    position: absolute;
+    top: 70px;
+    left: -140px;
+}
+
+.site-logo-text-icon {
+    img {
+        vertical-align: bottom;
+    }
+}
+
+
+
+
+
+// Size of max navbar button
+.rm-max .rm-small .rm-button {
+    font-size: 2em;
+}
+
+@maxButtonFontSize: 2em;
+
+// Style navbar
+.rm-desktop li {
+    background-color: @navbarItemBgColor;
+    border:2px solid @navbarAlternateColor;
+    border-radius: 6px;
+}
+
+.rm-desktop li:hover {
+    background-color: @navbarAlternateColor;
+}
+
+.rm-desktop li:hover a {
+    text-decoration: none !important;
+}
+
+
+.rm-desktop li.selected {
+    background-color: @navbarSelectedColor;
+}
+
+// Size each item in the header
+.site-logo-text,
+.navbar2,
+.profile {
+    float: left;
+    width: 60%;
+    padding-top:0.4em;
+}
+
+.site-header {
+    height: 80px;
+}
+
+// Site title
+.site-logo-text {
+    width: 30%;
+    font-size: 2em;
+    a {
+        text-decoration: none;
+        color:@navbarAlternateColor;
+    }
+}

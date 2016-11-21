@@ -3,7 +3,24 @@
 */
 @import url(modules.less);
 
+@navbarItemBgColor: #eeaaee;
+@navbarAlternateColor:#e16ae1;
+@navbarSelectedColor:#eeeeaa;
+@bodyBackgroundColor:#AEA;
 
+@fontColor:#2b2bd4;
+@headingsColor:#6a6ae1;
+
+
+
+body {
+    background: linear-gradient( 120deg, @bodyBackgroundColor, @navbarAlternateColor, @navbarSelectedColor);
+    color:@fontColor;
+}
+
+h1, h2, h3, h4 {
+    color:@headingsColor;
+}
 
 /** --------------------------------------------------------------
  *  Logo images
@@ -20,9 +37,7 @@
     }
 }
 
-@navbarItemBgColor: white;
-@navbarAlternateColor:#f89f00;
-@navbarSelectedColor:#fedc25;
+
 
 
 
